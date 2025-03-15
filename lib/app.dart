@@ -6,6 +6,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Home());
+    return MaterialApp(debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primaryColor: Color(0xff001C51),
+          primarySwatch: Colors.blue,
+        ),
+        home: Home());
   }
 }
